@@ -7,15 +7,19 @@ exports.seed = function(knex) {
       return knex('projects').insert([
         {
           ProjectName: 'Node API',
-          Description: 'Coding Test',
+          ProjectDescription: 'Coding Test',
           Completed: true
         },
         {
           ProjectName: 'Movie App',
-          Description: 'Coding Test',
+          ProjectDescription: 'Coding Test',
           Completed: false
         },
-        { ProjectName: 'rowValue3', Description: 'Coding Test' }
+        {
+          ProjectName: 'rowValue3',
+          ProjectDescription: 'Coding Test',
+          Completed: ''
+        }
       ]);
     });
 };
