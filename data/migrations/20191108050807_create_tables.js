@@ -5,7 +5,7 @@ exports.up = function(knex) {
 
     projects.string('ProjectName');
     projects.string('Description');
-    projects.boolean('Completed').defaultTo(false);
+    projects.boolean('Completed').default(0);
   });
 };
 
